@@ -1,3 +1,4 @@
+/* header */
 #header {
     padding: 10px 20px;
     position: sticky;
@@ -30,7 +31,62 @@
 #nav-bar a:hover {
     color: green;
 }
+/* header-end */
 
+/* Razer hammerhead models */
+.section{
+    min-height: 300px;
+    position: relative;
+}
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+.models-text {
+    font-family: sans-serif;
+    color: #44D62C;
+    font-size: 28px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Razer hammerhead models end */
+
+/* tech specs */
+.tech-specs {
+    background-color: #181818fe;
+    margin-top: -29px;
+}
+.tech-specs p{
+    color: #44D62C;
+    font-family: sans-serif;
+    padding-top: 50px;
+    padding-bottom: 12px;
+    font-size: 24px;
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 47%;
+    padding: 20px;
+}
+.column ul,h6{
+    color: #888888;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+.column h4{
+    color: #FFFFFF;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+.tech-specs:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* tech specs end */
+
+/* media query */
 @media screen and (max-width: 510px) {
     #header {
         flex-direction: column;
@@ -44,5 +100,12 @@
         width: 70%;
         display: block;
         text-align: center;
+    }
+    .models-text{
+        font-size: 80%;
+        top: 5%;
+    }
+    .column{
+        width: 100%;
     }
 }
