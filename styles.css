@@ -105,7 +105,10 @@
         font-size: 80%;
         top: 5%;
     }
-    .column{
+    .column {
         width: 100%;
+    }
+    .tech-specs {
+        margin-top: -200px;
     }
 }
